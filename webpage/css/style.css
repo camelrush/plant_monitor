@@ -1,0 +1,57 @@
+body {
+    background: #f0eaef;   
+    font-family: 'Noto Sans JP', sans-serif; 
+}
+
+.main-contents {
+    width: 85%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conditions-area{
+    padding: 10px;
+    text-align: -webkit-center;
+}
+
+.title-label {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.select {
+    background: #cfcedb;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .select::after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    z-index: -1;
+  }
+  
+  select {
+    /* 初期化 */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+  }

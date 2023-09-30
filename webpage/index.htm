@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>グラフ</title> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+	<script src="js/moisture-chart.js"></script>
+	<script src="js/span-selector.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="main-contents">
+    <p class="title-label">土壌水分割合グラフ</p>
+    <div class="conditions-area">
+      <div class="select">
+        <select class="view-span" id="span-selector">
+          <div class="sampleinner">
+            <option value="toady">本日分</option>
+            <option value="3days">3日分</option>
+            <option value="7days">7日分</option>
+            <option value="1month">1月分</option>
+            <option value="3months">3月分</option>
+            <option value="1year">1年分</option>
+          </div>
+        </select>
+      </div>        
+    </div>
+    <canvas id="myLineChart"></canvas>
+  </div>
+</body>
+</html>
